@@ -1,0 +1,173 @@
+/*
+    ## Colors
+
+    ### Primary
+
+    - Soft blue: hsl(215, 51%, 70%)
+    - Cyan: hsl(178, 100%, 50%)
+
+    ### Neutral
+
+    - Very dark blue (main BG): hsl(217, 54%, 11%)
+    - Very dark blue (card BG): hsl(216, 50%, 16%)
+    - Very dark blue (line): hsl(215, 32%, 27%)
+    - White: hsl(0, 0%, 100%)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+/*
+font-family: 'Outfit', sans-serif;
+*/
+
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* SPECIFY */
+.card {
+    max-width: 345px;
+    max-height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    padding: 25px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+    .card .image {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+        .card .image .img {
+            width: 300px;
+            height: 300px;
+            border-radius: 15px;
+            background-image: url(images/image-equilibrium.jpg);
+            background-position: center;
+            background-size: cover;
+            justify-content: center;
+            align-items: center;
+        }
+            .card .image .img img {
+                width: 100%;
+                height: 100%;
+                object-fit: none;
+                cursor: pointer;
+                opacity: 0;
+                border-radius: 15px;
+            }
+                .card .image .img img:hover {
+                    opacity: 1;
+                    background-color: rgba(0, 255, 247, 0.486);
+                    transition:all .3s ease-in;
+                }
+
+    .card .card-content {
+        width: 100%;
+    }
+        .card .card-content h3 {
+            margin-top: 25px;
+            color: hsl(0, 0%, 100%);
+            cursor: pointer;
+            width: max-content;
+            transition: color .5s;
+        }
+            .card .card-content h3:hover {
+                color: hsl(178, 100%, 50%);
+                transition: color .5s;
+            }
+        .card .card-content p {
+            color: hsl(215, 51%, 70%);
+            padding-top: 20px;
+        }
+    .card .down {
+        width: 100%;
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 25px;
+    }
+        .card .down p{
+            color: hsl(215, 51%, 70%);
+            font-size: 15px;
+            cursor: default;
+        }
+            .card .down p:first-of-type {
+                color: hsl(178, 100%, 50%);
+                font-size: 15px;
+            }
+    .card .foot{
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        padding-top: 15px;
+    }
+        .card .foot img {
+            width: 35px;
+            border: 1px hsl(0, 0%, 100%) solid;
+            border-radius: 50%;
+        }
+        .card .foot p {
+            font-size: 15px;
+            color: hsl(215, 51%, 70%);
+        }
+        .card .foot a {
+            text-decoration: none;
+            color: hsl(0, 0%, 100%);
+            transition: color .5s;
+        }
+            .card .foot a:hover {
+                color: hsl(178, 100%, 50%);
+                transition: color .5s;
+            }
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
